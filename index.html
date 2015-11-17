@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome!</title>
+		<link rel = "stylesheet" type = "text/css" a href = "style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+
+		<header id = "header">
+			<ul id = "firstlevel">
+				<li>About Me</li>
+				<li>Resume</li>
+				<li>Coursework
+					<ul id = "secondlevel">
+						<li>AMS310</li>
+						<li>CSE300
+							<ul id = "thirdlevel">
+								<li>Resume Reflection</li>
+								<li>Literature Review</li>
+								<li>User Manual</li>
+								<li>Research Proposal</li>
+								<li>Press Release</li>
+							</ul>
+						</li>
+						<li>CSE308</li>
+						<li>LIN230</li>
+						<li>MUS119</li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+
+		<div id = 'wrap'>
+			<div id = "main">
+
+				<!-- These divs provide the content, only one is shown at a time -->
+				<div id = "about" class = 'maincontent'>
+					<img src = "./img/me.png" height = "100px" width = "100px">
+					<div id = "elevatorpitch">
+						<p>Hello World! My name is Michael Wang, and I'm Computer Science student at Stony Brook University. 
+						I like creating apps that users can interact with, and am always eager to learn new technologies
+						for that purpose.</p>
+					</div>
+				</div>
+				
+				<div id = 'pdfview' class = 'maincontent'>
+					<object data="" type="application/pdf">
+						<p>It appears you don't have a PDF plugin for this browser.
+						No biggie... you can <a href="myfile.pdf">click here to
+						download the PDF file.</a></p>		  
+					</object>
+				</div>
+
+			</div>
+		</div>
+
+		<footer id = "footer">
+			<h3>&copy; 2015 Michael Wang</h3>
+			<a target = "_blank" href = "https://github.com/michaelxiaowang"><img alt = "github" class = "svg" src = "./img/github.svg"></a>
+			<a target = "_blank" href = "https://www.linkedin.com/in/michaelxiaowang"><img alt = "linkedin" class = "svg" src = "./img/linkedin.svg"></a>
+			<a target = "_blank" href = "mailto:michaelxiaowang@gmail.com"><img alt = "email" class = "svg" src = "./img/email.svg"></a>
+			<p>Connect with me!</p>
+		</footer>
+
+	</body>
+</html>
