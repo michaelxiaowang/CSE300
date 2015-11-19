@@ -23,7 +23,7 @@ html, body {
 /*Header first level*/
 #header {
 	position: relative;
-	height: 5%;
+	height: 10%;
 	border-bottom: 1px solid black;
 	background-color: #809fff;
 }
@@ -61,98 +61,52 @@ html, body {
 }
 /*Header first level*/
 
-/*Header second level*/
-#firstlevel li:hover #secondlevel {
-	display: table;
-}
-
-#secondlevel {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 100%;
-	left: -1px;
-	display: none;
-	border: 1px solid black;
-	background-color: #809fff;
-}
-
-#secondlevel li {
-	display: block;
-	height: 100%;
-	font-size: x-large;
-	text-align: center;
-	list-style-type: none;
-}
-
-#secondlevel li:hover {
-	background-color: #4d4d4d;
-}
-/*Header second level*/
-
-/*Header third level*/
-#thirdlevel {
-	position: absolute;
-	left: 100%;
-	border: 1px solid black;
-	background-color: #809fff;
-}
-
-#secondlevel li:hover #thirdlevel {
-	display: block;
-}
-
-#thirdlevel li {
-	display: none;
-}
-/*Header third level*/
-
 /*Content*/
 #wrap {
 	position: relative;
-	min-height: 85%;
+	min-height: 80%;
 }
 
-	#main {
-		position: relative;
-		min-height: 100%;
-	}
+#main {
+	position: relative;
+	min-height: 100%;
+}
 
-		.maincontent {
-			min-height: 100%;
-			overflow: auto;
-			display: none;
-		}
+.maincontent {
+	min-height: 100%;
+	overflow: auto;
+	display: none;
+}
 
-		#home {
-			text-align: center;
-		}
+#home {
+	text-align: center;
+}
 
-			#home h1 {
-				padding-top: 20px;
-				padding-bottom: 20px;
-				font-size: 40px;
-			}
+#home h1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 40px;
+}
 
-			#elevatorpitch p{
-				display: inline;
-			}
+#elevatorpitch p{
+	display: inline;
+}
 
-			#home img {
-				display: inline-block;
-				margin: auto;
-				vertical-align: middle;
-			}
+#home img {
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+}
 
-		#about {
-			margin-top: 20px;
-		}
+#about {
+	margin-top: 20px;
+}
 
-			#about img {
-				
-				display: block;
-				margin: auto;
-			}	
+#about img {
+	
+	display: block;
+	margin: auto;
+}	
 /*Content*/
 
 /*Footer*/
