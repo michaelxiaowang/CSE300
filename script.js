@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-    $('#about').show();
+    
+    //$('#main').css('height', $('body').height()-$('#header').height()-$('#footer').height());
+    $('#home').show();
     
     //Replaces svg images with inline svg, code from stackoverflow was used
     $('img.svg').each(function(){
@@ -43,46 +45,17 @@ $(document).ready(function() {
         var name = $(this).text();
 
         switch(name) {
+            case "Home":
+                $('.maincontent').hide();
+                $('#home').show();
+                break;
             case "About Me":
                 $('.maincontent').hide();
                 $('#about').show();
                 break;
-            case "Resume":
-                pdf = true;
-                $('.maincontent').hide();
-                $('#pdfview object').attr('data', './docs/Resume.pdf');
-                break;
-            case "Resume Reflection":
-                pdf = true;
-                $('.maincontent').hide();
-                $('#pdfview object').attr('data', './docs/Resume Reflection.pdf');
-                break;
-            case "Literature Review":
-                pdf = true;
-                $('.maincontent').hide();
-                $('#pdfview object').attr('data', './docs/Literature Review.pdf');
-                break;
-            case "User Manual":
-                pdf = true;
-                $('.maincontent').hide();
-                $('#pdfview object').attr('data', './docs/User Manual.pdf');
-                break;
-            case "Research Proposal":
-                pdf = true;
-                $('.maincontent').hide();
-                $('#pdfview object').attr('data', './docs/Proposal.pdf');
-                break;
-            case "Press Release":
-                pdf = true;
-                $('.maincontent').hide();
-                $('#pdfview object').attr('data', './docs/Press Release.pdf');
-                break;
             default:
                 //do nothing
                 break;
-        }
-        if(pdf) {
-            $('#pdfview').show();
         }
         //Prevent the li events from bubbling up
         evt.stopPropagation();

@@ -1,30 +1,35 @@
 <!DOCTYPE HTML>
 <html lang='en'>
 	<head>
+		<title>Michael Wang</title>
+		<link rel="shortcut icon" href="./img/logo.ico"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome!</title>
 		<link rel = "stylesheet" type = "text/css" a href = "style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
-
+		<a id = "returntop" href = "#header">Return to top</a>
 		<header id = "header">
 			<ul id = "firstlevel">
+				<li>Home</li>
 				<li>About Me</li>
-				<li>Resume</li>
+				<li><a href ='./docs/Resume.pdf' target = '_blank'>Resume</a></li>
+				<li>Projects</li>
 				<li>Coursework
 					<ul id = "secondlevel">
 						<li>AMS310</li>
 						<li>CSE300
+							
 							<ul id = "thirdlevel">
-								<li>Resume Reflection</li>
-								<li>Literature Review</li>
-								<li>User Manual</li>
-								<li>Research Proposal</li>
-								<li>Press Release</li>
+								<li><a href ='./docs/Resume Reflection.pdf' target = '_blank'>Resume Reflection</a></li>
+								<li><a href ='./docs/Literature Review.pdf' target = '_blank'>Literature Review</a></li>
+								<li><a href ='./docs/User Manual.pdf' target = '_blank'>User Manual</a></li>
+								<li><a href ='./docs/Proposal.pdf' target = '_blank'>Research Proposal</a></li>
+								<li><a href ='./docs/Press Release.pdf' target = '_blank'>Press Release</a></li>
 							</ul>
+							
 						</li>
 						<li>CSE308</li>
 						<li>LIN230</li>
@@ -38,23 +43,21 @@
 			<div id = "main">
 
 				<!-- These divs provide the content, only one is shown at a time -->
+				<div id = 'home' class = 'maincontent'>
+					<h1>Hello World! I'm</h1>
+					<img src = "./img/logo.png"/>
+					<h1>Software Developer</h1>
+				</div>
+				</div>
 				<div id = "about" class = 'maincontent'>
-					<img src = "./img/me.png" height = "100px" width = "100px">
+				<img id = 'me' src = "./img/me.png">
 					<div id = "elevatorpitch">
-						<p>Hello World! My name is Michael Wang, and I'm Computer Science student at Stony Brook University. 
+						<p>Hello World! I'm Michael Wang, a I'm Computer Science student at Stony Brook University. 
 						I like creating apps that users can interact with, and am always eager to learn new technologies
 						for that purpose.</p>
 					</div>
-				</div>
-				
-				<div id = 'pdfview' class = 'maincontent'>
-					<object data="" type="application/pdf">
-						<p>It appears you don't have a PDF plugin for this browser.
-						No biggie... you can <a href="myfile.pdf">click here to
-						download the PDF file.</a></p>		  
-					</object>
-				</div>
 
+				</div>
 			</div>
 		</div>
 
