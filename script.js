@@ -1,7 +1,4 @@
-$(document).ready(function() {
-
-    
-    //$('#main').css('height', $('body').height()-$('#header').height()-$('#footer').height());
+$(document).ready(function() { 
     $('#home').show();
     
     //Replaces svg images with inline svg, code from stackoverflow was used

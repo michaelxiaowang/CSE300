@@ -24,24 +24,28 @@ html, body {
 #header {
 	position: relative;
 	height: 10%;
+	width: 100%;
 	border-bottom: 1px solid black;
-	background-color: #809fff;
+	background-color: #595959;
 }
+
+/*#809fff*/
 
 #firstlevel {
 	display: table;
 	height: 100%;
+	width: 100%;
 }
 
-#firstlevel li {	
+#firstlevel li {
+	width: 20%;	
 	list-style-type: none;
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
 	color: white;
 	font-size: x-large;
-	padding-left: 10px;
-	padding-right: 10px;
 }
 
 #firstlevel li:hover {
@@ -79,7 +83,12 @@ html, body {
 }
 
 #home {
+	min-height: 100%;
 	text-align: center;
+}
+
+#home div{
+	background-color: #809fff;
 }
 
 #home h1 {
@@ -116,6 +125,7 @@ html, body {
 	width: 100%;
 	height: 10%;
 	background-color: #595959;
+	z-index: 1;
 }
 
 	#footer h3 {
