@@ -6,7 +6,6 @@
 
 html, body {
 	position: relative;
-	width: 100%;
 	height: 100%;
 	font-family: Ubuntu;
 }
@@ -22,18 +21,16 @@ html, body {
 
 /*Header first level*/
 #header {
-	position: absolute;
 	z-index: 500;
 	height: 10%;
-	width: 100%;
 }
 
 /*#809fff*/
 
 #firstlevel {
-	display: table;
+	display: flex;
+	justify-content: space-between;
 	height: 100%;
-	width: 100%;
 }
 
 #firstlevel li {
@@ -70,7 +67,6 @@ html, body {
 }
 
 #main {
-	width: 100%;
 	min-height: 100%
 }
 
@@ -80,7 +76,6 @@ html, body {
 
 #homewrap {
 	position: absolute;
-	width: 100%;
 	min-height: 100%
 }
 
@@ -159,7 +154,6 @@ html, body {
 
 #projectcontainer {
 	margin: auto;
-	width: 100%;
 	display: flex;
     justify-content: space-between;
 }
@@ -244,7 +238,6 @@ html, body {
 #footer {
 	color: white;
 	text-align: center;
-	width: 100%;
 	min-height: 10%;
 	background-color: #595959;
 	z-index: 1;
