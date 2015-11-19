@@ -1,6 +1,4 @@
-$(document).ready(function() { 
-    $('#home').show();
-    
+$(document).ready(function() {
     //Replaces svg images with inline svg, code from stackoverflow was used
     $('img.svg').each(function(){
         var $img = $(this);
@@ -30,6 +28,14 @@ $(document).ready(function() {
         }, 'xml');
     });
 
+    var height = ($('#wrap').height() - $('#home').height())/2;
+    $('#home').css({top: height});
+     var height = ($('#wrap').height() - $('#about').height())/2;
+    $('#about').css({top: height});
+    $('#home').show();
+    
+    
+
     //Display a particular '.maincontent' div when the related link is clicked
     $('li').click(function(evt) {
 
@@ -49,6 +55,14 @@ $(document).ready(function() {
             case "About Me":
                 $('.maincontent').hide();
                 $('#about').show();
+                break;
+            case "Projects":
+                $('.maincontent').hide();
+                $('#projects').show();
+                break;
+            case "Coursework":
+                $('.maincontent').hide();
+                $('#coursework').show();
                 break;
             default:
                 //do nothing

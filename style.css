@@ -69,32 +69,26 @@ html, body {
 #wrap {
 	position: relative;
 	min-height: 80%;
+	background: linear-gradient(teal, lightgreen);
 }
 
 #main {
-	position: relative;
 	min-height: 100%;
 }
 
 .maincontent {
-	min-height: 100%;
 	overflow: auto;
 	display: none;
 }
 
 #home {
-	min-height: 100%;
+	position: relative;
 	text-align: center;
 }
 
-#home div{
-	background-color: #809fff;
-}
-
 #home h1 {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: 40px;
+	vertical-align: middle;
+	font-size: xx-large;
 }
 
 #elevatorpitch p{
@@ -105,14 +99,24 @@ html, body {
 	display: inline-block;
 	margin: auto;
 	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #about {
-	margin-top: 20px;
+	position: relative;
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+#about p{
+	font-size: large;
 }
 
 #about img {
-	
+	border: 2px solid black;
+	border-radius: 50%;
 	display: block;
 	margin: auto;
 }	
@@ -128,25 +132,25 @@ html, body {
 	z-index: 1;
 }
 
-	#footer h3 {
-		padding-top: 5px;
-		padding-bottom: 3px;
-	}
+#footer h3 {
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
 
-		#connect {
-			vertical-align: middle;
-		}
+#connect {
+	vertical-align: middle;
+}
 
-		svg {
-			height: 30px;
-			width: 30px;
-		}
+svg {
+	height: 30px;
+	width: 30px;
+}
 
-		svg path{
-			fill: white;
-		}
+svg path{
+	fill: white;
+}
 
-		svg:hover path {
-			fill: #809fff;
-		}
+svg:hover path {
+	fill: #809fff;
+}
 /*Footer*/
