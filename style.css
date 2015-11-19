@@ -22,11 +22,10 @@ html, body {
 
 /*Header first level*/
 #header {
-	position: relative;
+	position: absolute;
+	z-index: 500;
 	height: 10%;
 	width: 100%;
-	border-bottom: 1px solid black;
-	background-color: #595959;
 }
 
 /*#809fff*/
@@ -50,8 +49,7 @@ html, body {
 
 #firstlevel li:hover {
 	cursor: pointer;
-	color: #809fff;
-	background-color: #4d4d4d;
+	color: blue;
 }
 
 #firstlevel li a {
@@ -60,29 +58,37 @@ html, body {
 }
 
 #firstlevel li a:hover {
-	color: #809fff;
-	background-color: #4d4d4d;
+	color: blue;
 }
 /*Header first level*/
 
 /*Content*/
 #wrap {
 	position: relative;
-	min-height: 80%;
+	min-height: 100%;
 	background: linear-gradient(teal, lightgreen);
 }
 
 #main {
-	min-height: 100%;
+	width: 100%;
+	min-height: 100%
 }
 
 .maincontent {
 	overflow: auto;
-	display: none;
+}
+
+#homewrap {
+	position: absolute;
+	width: 100%;
+	min-height: 100%
 }
 
 #home {
-	position: relative;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 	text-align: center;
 }
 
@@ -91,35 +97,147 @@ html, body {
 	font-size: xx-large;
 }
 
-#elevatorpitch p{
-	display: inline;
-}
-
 #home img {
-	display: inline-block;
+	display: block;
 	margin: auto;
-	vertical-align: middle;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-#about {
-	position: relative;
-	margin: auto;
-	width: 60%;
-	text-align: center;
+#home img:hover {
+	cursor: pointer;
 }
 
-#about p{
+#nothome {
+	position: absolute;
+	min-height: 100%;
+	top: 100%;
+}
+
+#about {
+	min-height: 100%;
+	color: white;
+	background-color: #595959;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#elevatorspeech {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#about p {
+	position: relative;
+	width: 60%;
+	display: inline;
 	font-size: large;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#about h1 {
+	padding-top: 20px;
 }
 
 #about img {
+	position: relative;
 	border: 2px solid black;
 	border-radius: 50%;
-	display: block;
+	display: inline-block;
 	margin: auto;
-}	
+	vertical-align: middle;
+}
+
+#projects {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+	background-color: lightgreen;
+}
+
+#projectcontainer {
+	margin: auto;
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+
+#projects h1 {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.project{
+	position: relative;
+	width: 40%;
+	color: white;
+	background-color: teal;
+	border: 2px solid black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#summary {
+	font-size: large;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+
+.project img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+	height: 60%;
+	width: 60%;
+}
+
+#coursework {
+	background: linear-gradient(lightgreen, white);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+}
+
+#coursework h1 {
+	text-align: center;
+	padding-bottom: 10px
+}
+
+#coursework h2 {
+	padding-bottom: 10px;
+}
+
+#coursecontent {
+	margin: auto;
+	width: 80%;
+}
+
+#coursework ul {
+	padding-top: 10px;
+	list-style: none;
+	display: flex;
+    justify-content: space-between;
+}
+
+#cf {
+	height: 40%;
+}
+
+#technologies {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	display: flex;
+    justify-content: space-between;
+	list-style: none;
+	position: absolute;
+	bottom: 2px;
+}
 /*Content*/
 
 /*Footer*/
@@ -127,7 +245,7 @@ html, body {
 	color: white;
 	text-align: center;
 	width: 100%;
-	height: 10%;
+	min-height: 10%;
 	background-color: #595959;
 	z-index: 1;
 }

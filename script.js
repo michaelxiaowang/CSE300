@@ -27,48 +27,4 @@ $(document).ready(function() {
 
         }, 'xml');
     });
-
-    var height = ($('#wrap').height() - $('#home').height())/2;
-    $('#home').css({top: height});
-     var height = ($('#wrap').height() - $('#about').height())/2;
-    $('#about').css({top: height});
-    $('#home').show();
-    
-    
-
-    //Display a particular '.maincontent' div when the related link is clicked
-    $('li').click(function(evt) {
-
-        //Check to see if li clicked is related to pdf file
-        var pdf = false
-
-        //Make the pdf objects' height equal to the space between header and footer
-        $('object').css("min-height", $('body').height()-$('#header').height()-$('#footer').height());
-
-        var name = $(this).text();
-
-        switch(name) {
-            case "Home":
-                $('.maincontent').hide();
-                $('#home').show();
-                break;
-            case "About Me":
-                $('.maincontent').hide();
-                $('#about').show();
-                break;
-            case "Projects":
-                $('.maincontent').hide();
-                $('#projects').show();
-                break;
-            case "Coursework":
-                $('.maincontent').hide();
-                $('#coursework').show();
-                break;
-            default:
-                //do nothing
-                break;
-        }
-        //Prevent the li events from bubbling up
-        evt.stopPropagation();
-    });
 })
