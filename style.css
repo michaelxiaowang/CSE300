@@ -94,7 +94,8 @@ html, body {
 
 #home img {
 	display: block;
-	margin: auto;
+	max-width: 100%;
+	height: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -105,11 +106,12 @@ html, body {
 
 #nothome {
 	position: absolute;
-	min-height: 100%;
 	top: 100%;
+	min-height: 100%;
 }
 
 #about {
+	position: relative;
 	min-height: 100%;
 	color: white;
 	background-color: #595959;
