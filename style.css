@@ -70,7 +70,7 @@ html, body {
 }
 
 .maincontent {
-	overflow: auto;
+	overflow-x: hidden
 }
 
 #homewrap {
