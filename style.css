@@ -28,18 +28,17 @@ html, body {
 /*#809fff*/
 
 #firstlevel {
-	display: flex;
-	justify-content: space-between;
+	display: table;
 	height: 100%;
+	width: 100%;
 }
 
-#firstlevel li {
-	width: 20%;	
+#firstlevel li {	
 	list-style-type: none;
 	position: relative;
 	display: table-cell;
-	vertical-align: middle;
 	text-align: center;
+	vertical-align: middle;
 	color: white;
 	font-size: x-large;
 }
@@ -75,7 +74,6 @@ html, body {
 }
 
 #homewrap {
-	position: absolute;
 	min-height: 100%
 }
 
