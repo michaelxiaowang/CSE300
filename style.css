@@ -21,6 +21,7 @@ html, body {
 
 /*Header first level*/
 #header {
+	overflow-x: hidden
 	z-index: 500;
 	height: 10%;
 }
