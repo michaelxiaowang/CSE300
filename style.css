@@ -80,10 +80,6 @@ html, body {
 }
 
 #home {
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 	text-align: center;
 }
 
@@ -94,6 +90,7 @@ html, body {
 
 #home img {
 	display: block;
+	margin: auto;
 	max-width: 100%;
 	height: auto;
 	padding-top: 10px;
