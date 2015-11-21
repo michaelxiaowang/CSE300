@@ -13,107 +13,101 @@
 	</head>
 
 	<body>
-		<a id = "returntop" href = "#header">Return to top</a>
+		<a id = "returntop" href = "#header">Return to top</a
+		<header id = "header">
+			<ul id = "header">
+				<li><a href = "#about">About Me</a></li>
+				<li><a href = "#projects">Projects</a></li>
+				<li><a href = "#coursework">Coursework</a></li>
+				<li><a href ='./docs/Resume.pdf' target = '_blank'>Resume</a></li>
+				<li><a href = "#footer">Connect</a></li>
+			</ul>
+		</header>
+		<div id = 'homewrap'>
+			<div id = 'home'>
+				<h1>Hello World, I am</h1>
+				<a href = "#about"><img src = "./img/logo.png"/></a>
+				<h1>Web & Software Developer</h1>
+				<h1>Entrepreneur</h1>
+			</div>
+		</div>
 
-		<div id = 'wrap'>
-			
-			<div id = 'homewrap'>
-				<header id = "header">
-					<ul id = "firstlevel">
-						<li><a href = "#about">About Me</a></li>
-						<li><a href = "#projects">Projects</a></li>
-						<li><a href = "#coursework">Coursework</a></li>
-						<li><a href ='./docs/Resume.pdf' target = '_blank'>Resume</a></li>
-						<li><a href = "#footer">Connect</a></li>
-					</ul>
-				</header>
-				<div id = 'home'>
-					<h1>Hello World, I am</h1>
-					<a href = "#about"><img src = "./img/logo.png"/></a>
-					<h1>Web & Software Developer</h1>
-					<h1>Entrepreneur</h1>
+		<div id = "nothome">
+			<div id = "about">
+				<h1>About Me</h1>
+				<div id = "elevatorspeech">
+					<p>I'm Michael Wang, a third-year undergraduate at Stony Brook University. I'm a Computer Science major & Entrepreneurship minor.
+					I love creating apps because it leaves me with a strong sense of accomplishment.</p>
 				</div>
+				<img id = 'me' src = "./img/me.png">
 			</div>
 
-			<div id = "nothome">
-				<div id = "about">
-					<h1>About Me</h1>
-					<div id = "elevatorspeech">
-						<p>I'm Michael Wang, a third-year undergraduate at Stony Brook University. I'm a Computer Science major & Entrepreneurship minor. </p><br>
-						<p> I love creating apps because it leaves me with a strong sense of accomplishment.</p>
+			<div id = "projects">
+				<h1>Projects</h1>
+				<div id = "projectcontainer">
+					<div class = "project">
+						<h1>Testing Center Scheduler</h1>
+						<div id = 'summary'>
+							<p> A UML design documented web application where instructors can request to host exams in Stony Brook's testing center. 
+							Administrators can approve exam requests then students can schedule appointments.</p>
+						</div>
+						<a href = "https://github.com/michaelxiaowang/TestingCenterScheduler" target = "_blank"><img src = "./img/frey.jpg"></a>
+						<ul id = 'technologies'>
+							<li>Node.js</li>
+							<li>MongoDB</li>
+							<li>Express</li>
+						</ul>
 					</div>
-					<img id = 'me' src = "./img/me.png">
-				</div>
-
-				<div id = "projects">
-					<h1>Projects</h1>
-					<div id = "projectcontainer">
-						<div class = "project">
-							<h1>Testing Center Scheduler</h1>
-							<div id = 'summary'>
-								<p> A UML design documented web application where instructors can request to host exams in Stony Brook's testing center. 
-								Administrators can approve exam requests then students can schedule appointments.</p>
-							</div>
-							<a href = "https://github.com/michaelxiaowang/TestingCenterScheduler" target = "_blank"><img src = "./img/frey.jpg"></a>
-							<ul id = 'technologies'>
-								<li>Node.js</li>
-								<li>MongoDB</li>
-								<li>Express</li>
-							</ul>
+					<div class = "project">
+						<h1>Journey Through Europe</h1>
+						<div id = 'summary'>
+							<p> Journey Through Europe is a popular board game by Ravensburger. Players have cards with cities they need to visit 
+							and roll the dice to move. There are many ways to travel across the board: walking, sailing, or on a flight.</p>
 						</div>
-						<div class = "project">
-							<h1>Journey Through Europe</h1>
-							<div id = 'summary'>
-								<p> Journey Through Europe is a popular board game by Ravensburger. Players have cards with cities they need to visit 
-								and roll the dice to move. There are many ways to travel across the board: walking, sailing, or on a flight.</p>
-							</div>
-							<a href = "https://github.com/michaelxiaowang/JourneyThroughEurope" target = "_blank"><img src = "./img/jte.jpg"></a>
-							<ul id = 'technologies'>
-								<li>Java</li>
-								<li>JavaFX</li>
-							</ul>
-						</div>
-						<div class = "project">
-							<h1>Code Formatter</h1>
-							<div id = 'summary'>
-								<p> This program takes a text file, assuming that it contains Java code, and formats it to fit Java code conventions.
-								It uses a stack to keep track of parenthesis and brackets for indenting conditional statements and loops</p>
-							</div>
-							<a href = "https://github.com/michaelxiaowang/CSE214---Data-Structures/tree/master/HW%233" target = "_blank"><img src = "./img/cf.png" id = 'cf'></a>
-							<ul id = 'technologies'>
-								<li>Java</li>
-							</ul>
-						</div>
+						<a href = "https://github.com/michaelxiaowang/JourneyThroughEurope" target = "_blank"><img src = "./img/jte.jpg"></a>
+						<ul id = 'technologies'>
+							<li>Java</li>
+							<li>JavaFX</li>
+						</ul>
 					</div>
-				</div>
-
-				<div id = "coursework">
-					<h1>Coursework</h1>
-					<div id = "coursecontent">
-						<h2>CSE300: Technical Communications</h2>
-						<p>The Technical Communications course focuses on communication in our professions. It covered a wide range of skills 
-						necessary for success: writing practices, document design, graphics, and professional documents. Below are my assignments 
-						for this course:</p>
-						<ul>
-							<li><a href ='./docs/Resume Reflection.pdf' target = '_blank'>Resume Reflection</a></li>
-							<li><a href ='./docs/Literature Review.pdf' target = '_blank'>Literature Review</a></li>
-							<li><a href ='./docs/User Manual.pdf' target = '_blank'>User Manual</a></li>
-							<li><a href ='./docs/Proposal.pdf' target = '_blank'>Research Proposal</a></li>
-							<li><a href ='./docs/Press Release.pdf' target = '_blank'>Press Release</a></li>
+					<div class = "project">
+						<h1>Code Formatter</h1>
+						<div id = 'summary'>
+							<p> This program takes a text file, assuming that it contains Java code, and formats it to fit Java code conventions.
+							It uses a stack to keep track of parenthesis and brackets for indenting conditional statements and loops</p>
+						</div>
+						<a href = "https://github.com/michaelxiaowang/CSE214---Data-Structures/tree/master/HW%233" target = "_blank"><img src = "./img/cf.png" id = 'cf'></a>
+						<ul id = 'technologies'>
+							<li>Java</li>
 						</ul>
 					</div>
 				</div>
-
-				<footer id = "footer">
-					<h3>&copy; 2015 Michael Wang</h3>
-					<a target = "_blank" href = "https://github.com/michaelxiaowang"><img alt = "github" class = "svg" src = "./img/github.svg" height = "30px" width = "30px"></a>
-					<a target = "_blank" href = "https://www.linkedin.com/in/michaelxiaowang"><img alt = "linkedin" class = "svg" src = "./img/linkedin.svg" height = "30px" width = "30px"></a>
-					<a target = "_blank" href = "mailto:michaelxiaowang@gmail.com"><img alt = "email" class = "svg" src = "./img/email.svg" height = "30px" width = "30px"></a>
-					<p>Connect with me!</p>
-				</footer>
 			</div>
-		</div>
-	</div>
 
+			<div id = "coursework">
+				<h1>Coursework</h1>
+				<div id = "coursecontent">
+					<h2>CSE300: Technical Communications</h2>
+					<p>The Technical Communications course focuses on communication in our professions. It covered a wide range of skills 
+					necessary for success: writing practices, document design, graphics, and professional documents. Below are my assignments 
+					for this course:</p>
+					<ul>
+						<li><a href ='./docs/Resume Reflection.pdf' target = '_blank'>Resume Reflection</a></li>
+						<li><a href ='./docs/Literature Review.pdf' target = '_blank'>Literature Review</a></li>
+						<li><a href ='./docs/User Manual.pdf' target = '_blank'>User Manual</a></li>
+						<li><a href ='./docs/Proposal.pdf' target = '_blank'>Research Proposal</a></li>
+						<li><a href ='./docs/Press Release.pdf' target = '_blank'>Press Release</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<footer id = "footer">
+				<h3>&copy; 2015 Michael Wang</h3>
+				<a target = "_blank" href = "https://github.com/michaelxiaowang"><img alt = "github" class = "svg" src = "./img/github.svg" height = "30px" width = "30px"></a>
+				<a target = "_blank" href = "https://www.linkedin.com/in/michaelxiaowang"><img alt = "linkedin" class = "svg" src = "./img/linkedin.svg" height = "30px" width = "30px"></a>
+				<a target = "_blank" href = "mailto:michaelxiaowang@gmail.com"><img alt = "email" class = "svg" src = "./img/email.svg" height = "30px" width = "30px"></a>
+				<p>Connect with me!</p>
+			</footer>
+		</div>
 	</body>
 </html>
