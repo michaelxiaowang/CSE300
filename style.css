@@ -175,7 +175,7 @@ html, body {
 	margin-bottom: 20px;
 	border: 2px solid black;
 	max-width: 60%;
-	max-height: 100%;
+	height: auto;
 }
 /*Projects*/
 
@@ -205,10 +205,6 @@ html, body {
 	list-style: none;
 	display: flex;
     justify-content: space-between;
-}
-
-#cf {
-	height: 40%;
 }
 
 #technologies {
@@ -281,6 +277,10 @@ svg:hover path {
 	#about p {
 		font-size: medium;
 	}
+
+	#projects p {
+		font-size: medium;
+	}
 }
 
 /*Smartphones*/
@@ -294,17 +294,21 @@ svg:hover path {
 	}
 
 	#home h1 {
-		font-size: x-small;
+		font-size: large;
 	}
 
 	#home img {
-		height: 50%;
-		width: 50%;
-		padding-top: 1px;
-		padding-bottom: 1px;
+		height: 70%;
+		width: 70%;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	#about p {
+		font-size: x-small;
+	}
+
+	#projects p {
 		font-size: x-small;
 	}
 }
