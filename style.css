@@ -109,7 +109,7 @@ html, body {
 #elevatorspeech {
 	margin: auto;
 	width: 80%;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 }
 
@@ -139,46 +139,70 @@ html, body {
 ----------------------------------------*/
 #projects {
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	text-align: center;
 	background-color: lightgreen;
 }
 
 #projectcontainer {
+	display: block;
 	margin: auto;
 }
 
 #projects h1 {
-	display: block;
 	padding-bottom: 10px;
+}
+
+#projects h3 {
+	display: block;
 }
 
 .project{
 	position: relative;
-	width: 40%;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
 	color: white;
 	background-color: teal;
-	border: 2px solid black;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
 }
 
-#summary {
-	font-size: large;
-	text-align: center;
-	margin: auto;
-	width: 80%;
+.project + .project {
+	margin-top-top: 10px;
 }
 
 .project img {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 2px solid black;
-	max-width: 60%;
-	height: auto;
+	width: 200px;
+	height: 200px;
+}
+
+.project:after {
+	
+}
+
+#technologies {
+	display: table;
+	margin: auto;
+	width: 80%;
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 2px;
+}
+
+#technologies li {
+	display: table-cell;
+	text-align: center;
 }
 /*Projects*/
 
+/*Coursework
+----------------------------------------*/
 #coursework {
 	background: linear-gradient(lightgreen, white);
 	padding-top: 20px;
@@ -206,22 +230,10 @@ html, body {
 	display: flex;
     justify-content: space-between;
 }
+/*Coursework*/
 
-#technologies {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	display: flex;
-    justify-content: space-between;
-	list-style: none;
-	position: absolute;
-	bottom: 2px;
-}
-/*Content*/
-
-/*Footer*/
+/*Footer
+-------------------------*/
 #footer {
 	color: white;
 	text-align: center;
@@ -253,7 +265,7 @@ svg:hover path {
 }
 /*Footer*/
 
-/*Smartphones*/
+/*Larger Smartphones*/
 @media only screen and (max-width:767px) {
 	h1 {
 		font-size: large;
@@ -278,8 +290,28 @@ svg:hover path {
 		font-size: medium;
 	}
 
+	.project {
+
+	}
+
 	#projects p {
 		font-size: medium;
+	}
+
+	#projects li {
+		font-size: small;
+	}
+
+	#coursework h2 {
+		font-size: large;
+	}
+
+	#coursework p {
+		font-size: small;
+	}
+
+	#coursework li {
+		font-size: x-small;
 	}
 }
 
@@ -290,7 +322,7 @@ svg:hover path {
 	}
 
 	#header li {
-		font-size: x-small;
+		font-size: small;
 	}
 
 	#home h1 {
@@ -308,7 +340,27 @@ svg:hover path {
 		font-size: x-small;
 	}
 
+	.project {
+		width: 80%;
+	}
+
 	#projects p {
 		font-size: x-small;
+	}
+
+	#projects li {
+		font-size: x-small;
+	}
+
+	#coursework h2 {
+		font-size: small;
+	}
+
+	#coursework p {
+		font-size: x-small;
+	}
+
+	#coursework li {
+		font-size: xx-small;
 	}
 }
